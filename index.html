@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Bud Improvement Ltd.</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Montserrat', sans-serif; color: #333; line-height: 1.6; }
+  a { text-decoration: none; color: inherit; }
+
+  header {
+    background: linear-gradient(135deg,#0073e6,#00c6ff) center/cover no-repeat;
+    height: 80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+  }
+  header h1 { font-size:4rem; }
+  header p { font-size:1.5rem; margin-top:1rem; opacity:.9; }
+
+  .container { max-width:1200px; margin:auto; padding:4rem 2rem; }
+  section { margin-bottom:4rem; }
+
+  h2 {
+    font-size:2.5rem;
+    margin-bottom:1rem;
+    position:relative;
+  }
+  h2::after {
+    content:"";
+    width:60px;
+    height:4px;
+    background:#0073e6;
+    position:absolute;
+    bottom:-10px;
+    left:0;
+  }
+
+  .grid { display:grid; gap:2rem; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); }
+  .card {
+    background:#fff;
+    border-radius:12px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.05);
+    padding:2rem;
+    transition:transform .3s;
+  }
+  .card:hover { transform:translateY(-5px); }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  ul li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: .75rem;
+  }
+  ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #0073e6;
+  }
+
+  form {
+    display:grid;
+    gap:1rem;
+  }
+  input, textarea {
+    padding:1rem;
+    border:2px solid #eee;
+    border-radius:8px;
+    transition:border-color .3s;
+  }
+  input:focus, textarea:focus { border-color:#0073e6; outline:none; }
+  button {
+    padding:1rem;
+    background:#0073e6;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    font-weight:600;
+    cursor:pointer;
+    transition:background .3s;
+  }
+  button:hover { background:#005bb5; }
+
+  footer {
+    text-align:center;
+    padding:2rem;
+    background:#f4f4f4;
+    font-size:.9rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Bud Improvement Ltd.</h1>
+    <p>Innovating Water Treatment Since 2003</p>
+  </div>
+</header>
+
+<section class="container" id="about">
+  <h2>About Us</h2>
+  <p>Bud Improvement Ltd. has been operating since 2003, specializing in water treatment for a variety of industrial and municipal projects. We bring together many years of experience, professional expertise, and advanced equipment to provide high‑quality solutions for improving the efficiency of water systems—both hot and cold—while also treating wastewater.</p>
+  <p>We guide our clients through the entire process—from engineering consultation and initial planning, to full implementation, continuous maintenance, and advanced laboratory services.</p>
+</section>
+
+<section class="container">
+  <h2>Our Expertise</h2>
+  <div class="grid">
+    <div class="card">Drinking Water Treatment</div>
+    <div class="card">Cooling Systems Treatment</div>
+    <div class="card">Boiler Water Treatment</div>
+    <div class="card">Wastewater Treatment</div>
+    <div class="card">Filtration & Purification</div>
+    <div class="card">Laboratory Analysis</div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Equipment & Materials</h2>
+  <ul>
+    <li>Monitoring & Dosing Systems</li>
+    <li>Chemicals, Resins & Activated Carbon</li>
+    <li>Filtration & Sedimentation Units</li>
+    <li>Reverse Osmosis (1‑ & 2‑Pass)</li>
+    <li>Water Softening Systems</li>
+    <li>Disinfection: Chlorine, UV, Ozone</li>
+  </ul>
+</section>
+
+<section class="container">
+  <h2>Why Choose Us?</h2>
+  <ul>
+    <li>20+ Years of Proven Success</li>
+    <li>End‑to‑End Project Delivery</li>
+    <li>Cutting‑Edge Technology & Quality</li>
+    <li>Dedicated Engineering Support</li>
+  </ul>
+</section>
+
+<section class="container">
+  <h2>Contact Us</h2>
+  <p>Kibbutz Givat Brenner 60948, Israel<br>Phone: +972-3-6478496 | Fax: +972-3-6471549<br>Email: <a href="mailto:info@budimprove.com">info@budimprove.com</a></p>
+  <form>
+    <input type="text" placeholder="Name" required>
+    <input type="tel" placeholder="Phone" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="5" placeholder="Message" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</section>
+
+<footer>&copy; 2024 Bud Improvement Ltd. All rights reserved.</footer>
+
+</body>
+</html>
